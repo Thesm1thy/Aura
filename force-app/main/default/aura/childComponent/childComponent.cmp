@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="inputText" type="String" />
+    <aura:attribute name="clearInput" type="Boolean" default="false" />
+    <aura:registerEvent name="messageEvent" type="c:messageEvent" />
+
+    <lightning:input aura:id="textInput" label="Enter text" value="{!v.inputText}" />
+    <lightning:button label="Send to Parent" onclick="{!c.sendMessage}" />
+
+    
+</aura:component>

@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="messages" type="String[]" />
+    <aura:attribute name="childClearInput" type="Boolean" default="false" />
+    
+    <c:childComponent aura:id="childComp" clearInput="{!v.childClearInput}" />
+
+    <lightning:button label="Clear Input in Child" onclick="{!c.clearChildInput}" />
+
+    <aura:iteration items="{!v.messages}" var="msg">
+        <p>{!msg}</p>
+    </aura:iteration>
+</aura:component>
