@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+    <aura:attribute name="inputValue" type="String" />
+    
+    <lightning:input aura:id="inputField" label="Enter Value" value="{!v.inputValue}" />
+    <lightning:button label="Pass Value" onclick="{!c.handleClick}" />
+</aura:component>
