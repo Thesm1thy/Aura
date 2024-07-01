@@ -3,6 +3,8 @@
 
     <aura:handler event="c:PassValueEvent" action="{!c.handleValuePass}" />
 
+    <lightning:button label="Clear Values" onclick="{!c.clearValues}" />
+
     <aura:iteration items="{!v.receivedValues}" var="value">
         <p>{!value}</p>
     </aura:iteration>
